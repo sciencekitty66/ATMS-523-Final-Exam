@@ -1,1 +1,11 @@
 # ATMS-523-Final-Exam
+
+(copied from final exam prompt)
+A client asks you to develop a frost risk model for their strawberry farm in Plant City, Florida.  As a first step in that process, you would like to understand the occurrence of these events by month and some information about the atmospheric conditions that generate frost in the location based on climatological records.  You remember that your ATMS 523 professor back in graduate school taught you some tricks that might be able to help. Using the code provided from Module 3, load in the GHCN-D daily temperature records from Plant City (Station USC00087205).
+
+Strawberries are planted around October 1 and ready for harvest by the end of January. What is the mean risk of frost and freeze, defined as the mean number of days per month over the period 1991-2020 that the temperature has been observed to be less than or equal to 32 and 28 degrees Fahrenheit, respectively, that might damage the plants for each month during the October - January period? (25 points)
+ To begin to explore the seasonal to sub-seasonal prediction of freeze events at this site, using code you adapt from Module 4, we're going to try to relate these cold events to the El Nino Southern Oscillation (ENSO).  You have a hypothesis that ENSO is related to seasonal prediction of freeze events, but you don't know which region to choose for calculating your anomalies.  The problem is that there are many ENSO indicies that represent forcing across the eastern and central Pacific: which SST forcing region is most related to cold conditions in central Florida? image.png
+Nino regions (source: NOAA CPC; https://www.ncei.noaa.gov/access/monitoring/enso/sst)Links to an external site.
+
+NOAA CPC has calculated mean SSTs and anomalies in each of these 4 regions (cpc.ncep.noaa.gov/data/indices/sstoi.indicesLinks to an external site.). Using the temperature anomalies computed in the file, determine which ENSO index (NINO1+2, NINO3, NINO4, and NINO3.4) is best correlated (i.e., has the highest absolute value of Pearson's correlation coefficient) with the number of days per month < 28 degrees F.  (25 points)
+Please work in a jupyter notebook and commit the jupyter notebook that you created to a github repository.  Be sure to commit the repository before the end of the exam. Share the repository link below.
